@@ -31,7 +31,7 @@ body {
     list-style: none;
 }
 .brand span{
-    color: #091B6C;
+    color: #03e9f4;
 }
 .Lema { 
     margin-top: 1em;
@@ -45,20 +45,20 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 1em;
-    font-size: 17px;
+    font-size: 20px;
     font-weight: 600;
 }
 .active{
     color: #fff;
 }
 .menu a:hover{
-    background-color: #091B6C;
+    background-color: #03e9f4;
     color: black;
     transition: ease-in .3s;
 }
 .main  {
     margin: 0 auto;
-    width: 180vh;
+    width: 190vh;
     height: 50vw;
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -68,17 +68,17 @@ body {
     font-size: 3em;
 }
 .name span{
-    color: #091B6C;
+    color: #03e9f4;
 }
 .download-cv{
     color: white;
     padding: 10px 20px;
-    background-color: #091B6C;
+    background-color: #03e9f4;
     border: none;
     border-radius: 20px;
     margin-top: 20px;
     cursor: pointer;
-    box-shadow: 1px 3px 11px -5px #091B6C;
+    box-shadow: 1px 3px 11px -5px #03e9f4;
 }
 .download-cv:hover{
     color: black;
@@ -87,8 +87,8 @@ body {
 }
 .main img{
     width: 550px;
-    border: 7px solid #091B6C;
-    box-shadow: 3px 5px 13px -7px #091B6C;
+    border: 7px solid #03e9f4;
+    box-shadow: 3px 5px 13px -7px #03e9f4;
 }
 
 .info-content{
@@ -97,8 +97,8 @@ body {
 .about img{
     margin-left: 2em;
     width: 45vw;
-    border: 5px solid #091B6C;
-    box-shadow: 3px 5px 13px -7px #091B6C;
+    border: 5px solid #03e9f4;
+    box-shadow: 3px 5px 13px -7px #03e9f4;
 }
 .about{
     color: #fff;
@@ -122,14 +122,14 @@ body {
 .divider{
     height: 4px;
     width: 98%;
-    background-color: #091B6C;
+    background-color: #03e9f4;
     margin-top: 20px;
     margin-bottom: 1em;
 }
 .divider-2{
     height: 4px;
     width: 45%;
-    background-color: #091B6C;
+    background-color: #03e9f4;
     margin-top: 15px;
     margin-bottom: 1em;
 }
@@ -137,12 +137,12 @@ body {
 .read-more{
     color: white;
     padding: 10px 20px;
-    background-color: #091B6C;
+    background-color: #03e9f4;
     border: none;
     border-radius: 20px;
     margin-top: 20px;
     cursor: pointer;
-    box-shadow: 1px 3px 11px -5px #091B6C;
+    box-shadow: 1px 3px 11px -5px #03e9f4;
 }
 .read-more:hover{
     color: black;
@@ -173,17 +173,29 @@ body {
     justify-content: center;
 }
 .card{
-    width: 300px;
+    width: 400px;
     height: 600px;
     background-color: #2C2C2A;
     color: white;
     margin: 2.5em;
 }
-.card-img{
+.card-img1{
     width: 100%;
     height: 280px;
-    background-image: url(../Resorces/otro2.jpg);
+    background-image: url(../Resorces/Project_Email.PNG);
     background-size: cover;
+}
+.card-img2{
+  width: 100%;
+  height: 280px;
+  background-image: url(../Resorces/Project_CarritodeCompras.PNG);
+  background-size: cover;
+}
+.card-img3{
+  width: 100%;
+  height: 280px;
+  background-image: url(../Resorces/Project_CharactersR&M_React.PNG);
+  background-size: cover;
 }
 .card-title{
     margin: 0 auto;
@@ -203,12 +215,12 @@ body {
 .card .project-details{
     color: white;
     padding: 10px 20px;
-    background-color: #091B6C;
+    background-color: #03e9f4;
     border: none;
     border-radius: 20px;
     margin-top: 20px;
     cursor: pointer;
-    box-shadow: 1px 3px 11px -5px #091B6C;
+    box-shadow: 1px 3px 11px -5px #03e9f4;
 }
 .card .project-details a {
     text-decoration: none;
@@ -217,7 +229,7 @@ body {
 .button-project{
     width: 160%;
 }
-.card .prueba{
+.card .btnLink{
     width: 67%;
     display: flex;
     justify-content: center;
@@ -262,22 +274,23 @@ body {
   }
   
   .form-group .input {
+    position: relative;
+    display: inline-block;
     padding: 10px 20px;
-    margin-bottom: 1em;
-    background: none;
-    border: none;
-    border-bottom: 1px solid #fff;
-    color: #fff;
+    color: #03e9f4;
+    overflow: hidden;
   }
+
   
-  .form-group .btn-submit {
+  
+  /* .form-group .btn-submit {
     padding: 10px 20px;
     margin: 1em;
     border-radius: 20px;
     border: none;
     text-transform: uppercase;
     background-color: aqua;
-  }
+  } */
   .footer-content h2 {
     font-size: 3em;
   }
@@ -400,7 +413,7 @@ body {
     color: #fff;
   }
   
-  .form-group .btn-submit {
+  /* .form-group .btn-submit {
     color: white;
     padding: 10px 20px;
     margin: 1em;
@@ -408,7 +421,7 @@ body {
     border: none;
     text-transform: uppercase;
     background-color: #091B6C;
-  }
+  } */
   
   
   .footer {
@@ -420,7 +433,7 @@ body {
     width: 100vw;
     height: 150px;
     padding: 2em;
-    background-color: #091B6C;
+    background-color: #03e9f4;
   }
   
   .footer-content h2 {

@@ -1,0 +1,83 @@
+.input-state-invalid{
+    box-shadow: 0 0 2px red,
+                0 0 1000px red,
+                0 0 30px  red,
+                0 0 2px red;
+    height: 7px;
+    background: linear-gradient(90deg, center, red);
+    animation: input-invalid 0.5s linear infinite;
+  }
+  .input-state-general{
+    top: 0;
+    width: 20%;
+    margin-top: -17.5px;
+    margin-bottom: 17.5px;
+    margin-left: -30px;
+    position: relative;
+    display: block;
+  }
+  .input-state-valid{
+    box-shadow: 0 0 2px #3BFA20,
+                0 0 1000px #3BFA20,
+                0 0 30px #3BFA20,
+                0 0 2px#3BFA20;
+    height: 6px;
+    background: linear-gradient(90deg, center, #3BFA20);
+    animation: input-valid 0.5s linear infinite;
+  }
+  .input-state-normal {
+    height: 5px;
+    background: linear-gradient(90deg, transparent, #03e9f4);
+    animation: btn-anim5 3s linear infinite;
+  }
+  @keyframes input-invalid{
+    0%{
+      left: 10%;
+    }
+    5%{left: 20%;}
+    10%{left: 30%;} 15%{left: 40%;}
+    20%{left: 50%;}25%{left: 55%;}30%{left: 60%;}35%{left: 65%;}40%{left: 70%;}45%{left: 75%;}
+    50%{left: 85%;}
+    55%{
+      left: 75%;
+    }60%{left: 70%;
+    }65%{left: 60%;}70%{left: 50%;
+    } 75%{left: 40%;}80%{left: 30%;}
+    90%{left: 20%;
+      background: linear-gradient(270deg, center, red);
+    }100%{left: 5%;}
+  }
+  @keyframes input-valid{
+    0%{
+      left: 10%;
+    }
+    5%{left: 20%;}
+    10%{left: 30%;} 15%{left: 40%;}
+    20%{left: 50%;}25%{left: 55%;}30%{left: 60%;}35%{left: 65%;}40%{left: 70%;}45%{left: 75%;}
+    50%{left: 85%;}
+    55%{
+      left: 75%;
+    }60%{left: 70%;
+    }65%{left: 60%;}70%{left: 50%;
+    } 75%{left: 40%;}80%{left: 30%;}
+    90%{left: 20%;
+      background: linear-gradient(270deg, center, #3BFA20);
+    }100%{left: 5%;}
+  }
+  @keyframes btn-anim5 {
+    0%{
+      left: 10%;
+    }
+    5%{left: 20%;}
+    10%{left: 30%;} 15%{left: 40%;}
+    20%{left: 50%;}25%{left: 55%;}30%{left: 60%;}35%{left: 65%;}40%{left: 70%;}45%{left: 75%;}
+    50%{left: 85%;}
+    55%{
+      left: 75%;
+    }60%{left: 70%;
+    }65%{left: 60%;}70%{left: 50%;
+    } 75%{left: 40%;}80%{left: 30%;}
+    90%{left: 20%;
+      background: linear-gradient(270deg, transparent, #03e9f4);
+    }100%{left: 5%;}
+  }

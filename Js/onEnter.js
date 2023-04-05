@@ -16,22 +16,38 @@ document.addEventListener("DOMContentLoaded", function(event) {
     const name_Contact = document.getElementById('name_Contact');
     const email_Contact = document.getElementById('email_Contact');
     const content = document.getElementById('content');
-    const btnSend = document.getElementById('btnSend');
+    const btnSend = document.getElementById('btnSend'); 
 
-    btnSend.addEventListener('click', validarEmail);
+    btnSend.addEventListener('click', validarCampos);
   }
-  function validarEmail(e){
+  function validarCampos(e){
     e.preventDefault();
-    if(name_Contact.value == ""){
-        return;
+    let name_state = $(name_Contact).parent().find("#span-name");
+    name_state.removeClass("input-state-normal");
+    if (name_Contact.value == "") {
+      name_state.removeClass("input-state-valid")
+        .addClass("input-state-invalid");
+    } else {
+      name_state.removeClass("input-state-invalid")
+        .addClass("input-state-valid");
     }
-    if(email_Contact.value == ""){
-      return;
+
+    let isValid = validaEmail();
+    let name_stateContact = $(email_Contact).parent().find("#span-name_Contact");
+    name_stateContact.removeClass("input-state-normal")
+    if(!isValid || email_Contact.value == ""){
+      name_stateContact.removeClass("input-state-valid")
+        .addClass("input-state-invalid");
+    }else {
+      name_stateContact.removeClass("input-state-invalid")
+        .addClass("input-state-valid");
     }
-    if(content.value == ""){
-      return;
-    }
+    
     SendEmail(name_Contact.value, email_Contact.value, content.value);
+  }
+  function validaEmail(){
+    var validEmail = /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/;
+    return validEmail.test(email_Contact.value);
   }
 
   function ClickScroll(e) {
@@ -46,6 +62,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   }
 
   function SendEmail(oName_Contact, oEmail_Contact, oContent){
+    return;
     emailjs.send("service_qmgjyur","template_spn7f0v",{
       from_name: oName_Contact,
       content: oContent,
