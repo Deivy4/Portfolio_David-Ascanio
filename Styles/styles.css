@@ -101,6 +101,7 @@ body {
     box-shadow: 3px 5px 13px -7px #03e9f4;
 }
 .about{
+  margin-top: -90px;
     color: #fff;
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -425,7 +426,7 @@ body {
   
   
   .footer {
-    color: white;
+    color: black;
     display: flex;
     flex-direction: column;
     justify-content: center;
