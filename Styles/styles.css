@@ -13,7 +13,7 @@ body {
 
 .wrapper{
     width: 100vw;
-    height: 120vh;
+    height: 140vh;
     background-color: black ;
     color: #fff;
 }
@@ -57,7 +57,7 @@ body {
     transition: ease-in .3s;
 }
 .main  {
-    margin: 0 auto;
+    margin-left: 110px;
     width: 190vh;
     height: 50vw;
     display: grid;
@@ -65,7 +65,7 @@ body {
     align-items: center;
 }
 .name {
-    font-size: 3em;
+    font-size: 2.5em;
 }
 .name span{
     color: #03e9f4;
