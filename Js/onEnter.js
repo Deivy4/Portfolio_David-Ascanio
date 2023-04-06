@@ -62,7 +62,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
   }
 
   function SendEmail(oName_Contact, oEmail_Contact, oContent){
-    return;
     emailjs.send("service_qmgjyur","template_spn7f0v",{
       from_name: oName_Contact,
       content: oContent,
