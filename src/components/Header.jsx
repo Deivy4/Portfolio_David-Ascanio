@@ -6,12 +6,12 @@ import Contact from '../pages/Contact';
 import AboutMe from '../pages/AboutMe';
 import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 
-const pages = {
-  HOME : <Home/>,
-  PROJECTS : <Projects/>,
-  CONTACT : <Contact/>,
-  ABOUTME : <AboutMe/>
-}
+const pages = [
+  { path: "/", component: <Home/> },
+  { path: "/projects", component: <Projects/> },
+  { path: "/about", component: <Contact/> },
+  { path: "/contact", component: <AboutMe/> }
+]
 
 export default function Header() {
   return (
@@ -19,10 +19,11 @@ export default function Header() {
       <NavBar/>
       <main className="p-4">
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/about" element={<AboutMe />} />
-          <Route path="/contact" element={<Contact />} />
+          {
+            pages.map(({path, component},index)=>(
+              <Route path={path} element={component} />
+            ))
+          }
         </Routes>
       </main>
     </Router>
