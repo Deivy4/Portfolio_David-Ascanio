@@ -1,11 +1,10 @@
-import React from 'react'
-import NavBar from './NavBar'
-import Home from '../pages/Home'
-import Projects from '../pages/Projects'
-import Contact from '../pages/Contact'
-import AboutMe from '../pages/AboutMe'
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-
+import React from 'react';
+import NavBar from './NavBar';
+import Home from '../pages/Home';
+import Projects from '../pages/Projects';
+import Contact from '../pages/Contact';
+import AboutMe from '../pages/AboutMe';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 
 const pages = {
   HOME : <Home/>,
@@ -13,8 +12,8 @@ const pages = {
   CONTACT : <Contact/>,
   ABOUTME : <AboutMe/>
 }
-export default function Header() {
 
+export default function Header() {
   return (
     <Router>
       <NavBar/>
@@ -27,5 +26,5 @@ export default function Header() {
         </Routes>
       </main>
     </Router>
-  )
+  );
 }
