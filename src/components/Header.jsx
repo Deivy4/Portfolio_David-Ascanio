@@ -9,8 +9,8 @@ import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 const pages = [
   { path: "/", component: <Home/> },
   { path: "/projects", component: <Projects/> },
-  { path: "/about", component: <Contact/> },
-  { path: "/contact", component: <AboutMe/> }
+  { path: "/about", component: <AboutMe/> },
+  { path: "/contact", component: <Contact/> }
 ]
 
 export default function Header() {
@@ -21,7 +21,7 @@ export default function Header() {
         <Routes>
           {
             pages.map(({path, component},index)=>(
-              <Route path={path} element={component} />
+              <Route path={path} element={component} key={index}/>
             ))
           }
         </Routes>

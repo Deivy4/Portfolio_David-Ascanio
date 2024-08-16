@@ -1,0 +1,37 @@
+
+.img-project{
+    max-width: 550px;
+    min-width: 400px;
+}
+/* src/styles/componentsStyles/CardProject.css */
+
+/* Efecto de sombra y elevación para la imagen en hover */
+.img-project {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .img-project:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Efecto de desplazamiento y desenfoque en el contenedor de la tarjeta */
+  /* .wrapper-project {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .wrapper-project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  } */
+  
+  /* Efecto de transición en el botón */
+  button {
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  }
+  
+  button:hover {
+    transform: scale(1.1);
+    background-color: #2d3748; /* Cambiar a un color más oscuro si lo deseas */
+  }
+  
