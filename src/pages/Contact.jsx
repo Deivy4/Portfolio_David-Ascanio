@@ -15,7 +15,7 @@ export default function Contact() {
             Correo Electrónico: daviddeveloper24@outlook.com
           </a>
           <a href="tel:+1234567890" className="text-blue-500 hover:underline mb-4">
-            Teléfono: 
+            Teléfono: +57 302 7682857 (solo whatsapp)
           </a>
           <a href="https://www.linkedin.com/in/david-ascanio/" className="text-blue-500 hover:underline">
             LinkedIn: linkedin.com/in/david-ascanio
