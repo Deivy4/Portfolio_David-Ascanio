@@ -11,9 +11,9 @@ export default function CardProject({ tittle, description, imageUrl, url = "" })
   };
 
   return (
-    <div className='mx-auto wrapper-project rounded flex flex-col justify-between sm:flex-row pb-4'>
+    <div className=' items-center mx-auto rounded altura-card-project flex flex-col justify-between sm:flex-row pt-4'>
       <img className="w-full img-project h-64 rounded-3xl" src={imageUrl} alt={tittle} />
-      <div className="w-full ml-4">
+      <div className="w-full ml-4 min-w-80 p-4">
         <div className="font-bold text-xl mb-2 text-white">{tittle}</div>
         <p className="text-white text-base">
           {description}

@@ -23,7 +23,7 @@ export default function Projects() {
     }
   ]
   return (
-    <div className="font-custom">
+      <div className="font-custom divide-y-2 container mx-auto">
       {projects.map((project, index) => (
         <CardProject
           key={index}
