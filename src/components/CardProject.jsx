@@ -11,20 +11,23 @@ export default function CardProject({ tittle, description, imageUrl, url = "" })
   };
 
   return (
-    <div className=' items-center mx-auto rounded altura-card-project flex flex-col justify-between sm:flex-row pt-4'>
-      <img className="w-full img-project h-64 rounded-3xl" src={imageUrl} alt={tittle} />
-      <div className="w-full ml-4 min-w-80 p-4">
-        <div className="font-bold text-xl mb-2 text-white">{tittle}</div>
-        <p className="text-white text-base">
-          {description}
-        </p>
-        <button
-          onClick={handleClick}
-          className='bg-black text-white font-bold py-2 my-2 px-2 rounded hover:bg-gray-800 transition duration-300 ease-in-out'
-        >
-          <FaGithub className="text-xl" />
-        </button>
+    <div className='bg-slate-700 text-white hover:bg-white hover:text-black'>
+      <div className='flex-1 min-w-[300px] max-w-[300px] p-4 border rounded h-full'>
+        <img className="" src={imageUrl} alt={tittle} />
+        <div className="">
+          <h2 className="font-bold text-xl mb-2 ">{tittle}</h2>
+          <p className=" text-[14px]">
+            {description}
+          </p>
+          <button
+            onClick={handleClick}
+            className='bg-black text-white font-bold py-2 my-2 px-2 rounded hover:bg-gray-800 transition duration-300 ease-in-out'
+          >
+            <FaGithub className="text-xl" />
+          </button>
+        </div>
       </div>
     </div>
+    
   );
 }
