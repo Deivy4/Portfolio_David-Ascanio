@@ -1,9 +1,15 @@
 // src/components/CardProject.js
-import React from 'react';
+import { useEffect, useState } from 'react';
 import { FaGithub } from 'react-icons/fa';
 import '../styles/componentsStyles/CardProject.css';
 
 export default function CardProject({ tittle, description, imageUrl, url = "" }) {
+
+  const [isVisible, setIsVisible] = useState(false);
+  
+  useEffect(() => {
+    setIsVisible(true);
+  }, []);
 
   const handleClick = () => {
     if (url === "") return;
@@ -11,7 +17,7 @@ export default function CardProject({ tittle, description, imageUrl, url = "" })
   };
 
   return (
-    <div className='bg-slate-700 text-white hover:bg-white hover:text-black'>
+    <div className={`${isVisible ? 'scale-100' : 'scale-0'} duration-300 ease-in-out transition-transform transform bg-slate-700 text-white hover:bg-white hover:text-black`}>
       <div className='flex-1 min-w-[300px] max-w-[300px] p-4 border rounded h-full'>
         <img className="" src={imageUrl} alt={tittle} />
         <div className="">
