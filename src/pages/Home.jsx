@@ -10,7 +10,10 @@ export default function Home() {
         <div className="font-custom flex flex-col items-center min-w-96">
             <h1 className='text-4xl'>Hola, soy David Ascanio</h1>
             <p className='text-4xl'>Desarrollador Web</p>
-            <Link to="/projects" className='mt-2 py-1 px-3 bg-blue-500 rounded cursor-pointer'>See projects</Link>
+            <div className='flex gap-3'>
+              <Link to="/projects" className='hover:bg-white hover:text-black mt-2 py-1 px-3 bg-black rounded cursor-pointer text-white'>See projects</Link>
+              <a href='/curriculum_vitae_David_Ascanio.pdf' download={'curriculum_vitae_David_Ascanio.pdf'} className='hover:bg-white hover:text-black mt-2 py-1 px-3 bg-black rounded cursor-pointer text-white'>Dowmload CV</a>
+            </div>
         </div>
         <div className='justify-center flex min-w-96'>
             <img className='size-auto min-w-96' src={myImage}/>
