@@ -9,7 +9,7 @@ export default function Projects() {
   const [search, setSearch] = useState('')
   const handleClickSearch = (e) =>{
     e.preventDefault()
-    let projectsFilters = projects.filter(x => x.tittle.toLowerCase().includes(search))
+    let projectsFilters = projects.filter(x => x.tittle.toLowerCase().includes(search.toLowerCase()))
     setProjects(projectsFilters)
   }
   return (
