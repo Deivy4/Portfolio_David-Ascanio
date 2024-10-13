@@ -2,8 +2,14 @@ import project1 from '../assets/photos_projects/page_cameras.jpeg'
 import project2 from '../assets/photos_projects/form_validation.jpeg'
 import project3 from '../assets/photos_projects/app_scrapping.jpeg'
 import project4 from '../assets/photos_projects/App_notes.png'
+import project5 from '../assets/photos_projects/clon-spotify.jpg'
 
 const projects = [
+    {
+        tittle : "Clon de Spotify",
+        description : "El clon de Spotify es una aplicación web que simula la experiencia de streaming de música. Este proyecto está construido con React para manejar la interfaz de usuario de manera eficiente y utiliza Tailwind CSS para estilizar la aplicación de forma responsiva y moderna.",
+        imageUrl : project5
+    },
     {
     tittle : "Página de cámaras",
     description : "Desarrollé una página web para una empresa de servicios de cámaras de seguridad. La plataforma permite a los usuarios explorar diferentes opciones de cámaras, consultar precios y ponerse en contacto con el equipo de ventas. Implementé una interfaz intuitiva y responsive, con un backend robusto para gestionar consultas y datos de clientes. Tecnologías usadas: React, Node.js, Tailwind.",

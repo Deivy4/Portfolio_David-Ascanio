@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import CardProject from '../components/CardProject'
 import ComboBox from '../components/ComboBox';
-import projects from '../Data/projects';
+import projects from '../data/projects';
 import { FaSearch } from "react-icons/fa";
 
 export default function Projects() {
